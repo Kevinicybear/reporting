@@ -832,17 +832,21 @@
     }
 
     @media (max-width: 900px) {
+      section {
+        padding: 100px 30px 50px;
+      }
+
       .content-grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
 
       .hero-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
       }
 
       .section-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
 
       .comparison {
@@ -851,6 +855,266 @@
 
       .video-grid {
         grid-template-columns: 1fr;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .final-icons {
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        padding: 15px 20px;
+      }
+
+      .nav-logo {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+      }
+
+      .nav-number {
+        display: none;
+      }
+
+      .nav-dots {
+        gap: 6px;
+      }
+
+      .nav-dot {
+        width: 6px;
+        height: 6px;
+      }
+
+      section {
+        padding: 90px 20px 40px;
+        min-height: auto;
+        padding-bottom: 60px;
+      }
+
+      .hero {
+        min-height: 100vh;
+        padding: 80px 20px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+
+      .hero-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 4px;
+      }
+
+      .hero-desc {
+        font-size: 0.8rem;
+      }
+
+      .section-number {
+        font-size: 0.6rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+      }
+
+      .section-desc {
+        font-size: 0.85rem;
+        line-height: 1.6;
+      }
+
+      .card {
+        padding: 20px;
+        margin-bottom: 12px;
+      }
+
+      .card-label {
+        font-size: 0.6rem;
+        margin-bottom: 8px;
+      }
+
+      .card-content {
+        font-size: 0.85rem;
+        line-height: 1.6;
+      }
+
+      .bullet-list li {
+        font-size: 0.85rem;
+        padding-left: 16px;
+        margin-bottom: 8px;
+      }
+
+      .bullet-list li::before {
+        width: 5px;
+        height: 5px;
+        top: 8px;
+      }
+
+      .ref-label {
+        font-size: 0.6rem;
+      }
+
+      .ref-box {
+        padding: 12px 16px;
+      }
+
+      .ref-box a {
+        font-size: 0.75rem;
+      }
+
+      .ugc-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .ugc-item {
+        border-radius: 8px;
+      }
+
+      .video-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .video-links a {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+      }
+
+      .video-container {
+        aspect-ratio: 16/9;
+      }
+
+      .shade-grid {
+        gap: 10px;
+      }
+
+      .shade-box {
+        width: 60px;
+        height: 50px;
+        font-size: 0.85rem;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .tool-card {
+        padding: 18px;
+      }
+
+      .tool-name {
+        font-size: 0.95rem;
+      }
+
+      .tool-desc {
+        font-size: 0.8rem;
+      }
+
+      .comparison {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .comparison-card {
+        padding: 20px;
+      }
+
+      .comparison-price {
+        font-size: 2rem;
+      }
+
+      .final-box {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+      }
+
+      .final-box p {
+        font-size: 1.2rem;
+      }
+
+      .final-icons {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .final-icon span {
+        font-size: 2rem;
+      }
+
+      .final-icon p {
+        font-size: 0.65rem;
+      }
+
+      .highlight-box {
+        padding: 18px;
+      }
+
+      .highlight-box p {
+        font-size: 0.85rem;
+      }
+
+      .alert-box, .success-box {
+        padding: 16px 18px;
+      }
+
+      .featured-product-name {
+        font-size: 1.6rem;
+      }
+
+      .badge {
+        padding: 6px 12px;
+        font-size: 0.65rem;
+      }
+
+      .footer {
+        padding: 40px 20px;
+      }
+
+      .footer-logo {
+        font-size: 1rem;
+      }
+
+      .footer-text {
+        font-size: 0.7rem;
+      }
+
+      .scroll-indicator {
+        bottom: 20px;
+      }
+
+      .scroll-indicator span {
+        font-size: 0.6rem;
+      }
+
+      .scroll-arrow {
+        height: 30px;
+      }
+
+      /* Video grid on mobile */
+      .video-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .video-block-label {
+        font-size: 0.6rem;
+      }
+
+      /* Image placeholder adjustments */
+      .image-placeholder {
+        aspect-ratio: 4/3;
+      }
+
+      .content-left, .content-right {
+        transform: none;
       }
     }
   </style>
