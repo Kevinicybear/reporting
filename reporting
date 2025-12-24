@@ -767,6 +767,29 @@
       margin-top: 16px;
     }
 
+    /* Template Warning */
+    .template-warning {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(220, 53, 69, 0.95);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px 15px;
+      letter-spacing: 0.5px;
+      z-index: 10;
+    }
+
+    @media (max-width: 600px) {
+      .template-warning {
+        font-size: 0.55rem;
+        padding: 8px 10px;
+      }
+    }
+
     /* Video Links */
     .video-links {
       display: flex;
@@ -1208,8 +1231,9 @@
       
       <div class="content-right">
         <p class="ref-label">Reference Video — Current Mojito Style</p>
-        <div class="video-container">
+        <div class="video-container" style="position: relative;">
           <iframe src="https://drive.google.com/file/d/1R8w_a_oYxzIhZBjilWB7ILe2pPn-V-pL/preview" allow="autoplay"></iframe>
+          <div class="template-warning">⚠️ TEMPLATE ONLY — Text and information shown are examples only</div>
         </div>
         <div class="ref-box">
           <a href="https://drive.google.com/file/d/1R8w_a_oYxzIhZBjilWB7ILe2pPn-V-pL/view?usp=drive_link" target="_blank">
