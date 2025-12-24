@@ -104,7 +104,11 @@
       flex-direction: column;
       padding: 120px 80px 80px;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
+    }
+
+    section.slide {
+      scroll-snap-align: start;
     }
 
     /* Hero Section */
@@ -867,6 +871,10 @@
     }
 
     @media (max-width: 600px) {
+      html {
+        scroll-snap-type: none;
+      }
+
       .nav {
         padding: 15px 20px;
       }
@@ -893,6 +901,7 @@
         padding: 90px 20px 40px;
         min-height: auto;
         padding-bottom: 60px;
+        scroll-snap-align: none;
       }
 
       .hero {
@@ -926,6 +935,12 @@
       .section-desc {
         font-size: 0.85rem;
         line-height: 1.6;
+      }
+
+      .content-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
       }
 
       .card {
@@ -989,6 +1004,7 @@
 
       .video-container {
         aspect-ratio: 16/9;
+        min-height: 200px;
       }
 
       .shade-grid {
@@ -1115,6 +1131,13 @@
 
       .content-left, .content-right {
         transform: none;
+        opacity: 1;
+      }
+
+      /* Section 7 specific - reduce iframe sizes on mobile */
+      #section-7 .video-container {
+        aspect-ratio: 4/3;
+        min-height: 180px;
       }
     }
   </style>
